@@ -1,5 +1,5 @@
 package adapterPattern;
 
-public class schoolManagementApp{
+public interface schoolManagementApp{
     public String integrateSystem();
 }

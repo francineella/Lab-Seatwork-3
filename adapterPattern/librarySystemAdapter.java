@@ -9,6 +9,6 @@ package adapterPattern;
         }
         @Override
         public String integrateSystem(){
-            return librarySystem.manageBooks;
+            return books.manageBooks();
         }
     }

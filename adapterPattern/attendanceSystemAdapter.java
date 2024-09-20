@@ -8,6 +8,6 @@ package adapterPattern;
             this.attendance = attendance;
         }
         public String integrateSystem(){
-            return attendanceSystem.markAttendance;
+            return attendance.markAttendance();
         }
     }

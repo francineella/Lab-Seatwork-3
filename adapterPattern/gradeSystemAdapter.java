@@ -2,12 +2,13 @@ package adapterPattern;
 
     public class gradeSystemAdapter implements schoolManagementApp {
 
-        private gradeSystem grade;
+        private gradingSystem grade;
 
-        public gradeSystemAdapter(gradeSystem grade){
+        public gradeSystemAdapter(gradingSystem grade){
             this.grade = grade;
         }
+        
         public String integrateSystem(){
-            return gradeSystem.recordGrade;
+            return grade.recordGrades();
         }
     }

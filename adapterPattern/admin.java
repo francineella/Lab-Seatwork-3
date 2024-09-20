@@ -5,16 +5,16 @@ public class admin{
     public static void main(String[] args){
 
         attendanceSystem attendance = new attendanceSystem();
-        integrateSystem attendanceSm = new attendanceSystemAdapter(attendanceSystem);
+        schoolManagementApp attendanceSm = new attendanceSystemAdapter(attendance);
 
-        gradeSystem grade = new gradeSystem();
-        integrateSystem gradeSm = new gradeSystemAdapter(gradeSystem);
+        gradingSystem grade = new gradingSystem();
+        schoolManagementApp gradeSm = new gradeSystemAdapter(grade);
 
         librarySystem books = new librarySystem();
-        integrateSystem booksSm = new librarySystemAdapter(librarySystem);
+        schoolManagementApp booksSm = new librarySystemAdapter(books);
 
-        System.out.println(attendanceSm.markAttendance());
-        System.out.println(gradeSm.recordGrade());
-        System.out.println(booksSm.manageBooks());
+        System.out.println(attendanceSm.integrateSystem());
+        System.out.println(gradeSm.integrateSystem());
+        System.out.println(booksSm.integrateSystem());
     }
 }
